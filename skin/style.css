@@ -1,0 +1,165 @@
+html{
+    --themeRed: #AC1933;
+    --themeGreen: #4AA55B;
+    --themeBlue: #21A8F3;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh; 
+    background-color: #E6E6E6;
+    font-family: Helvetica, Arial, Verdana;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header{ 
+    min-height:3vh;
+}
+
+nav{
+    margin: 1em;
+}
+
+ul{
+    list-style-type: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--themeRed);
+}
+
+main{
+    margin: auto;
+    width: 90%;
+}
+
+.title{
+    color: var(--themeRed);
+}
+
+.homeButton{
+    padding: 1.25em 2em;
+    margin: 0.5em;
+}
+
+button a{
+    text-decoration: none;
+}
+
+footer{
+    min-height: 3vh; 
+}
+
+.coloredBackgroundButton{
+    border-radius: 25px;
+    border: none;
+    background-color: var(--themeRed);
+    color: white;
+}
+
+.coloredBackgroundButton a{
+    color: white;
+}
+
+.coloredTextButton{
+    border-radius: 25px;
+    border: 1px solid var(--themeRed);
+    background-color: white;
+    color: var(--themeRed);
+}
+
+.coloredTextButton a{
+    color: var(--themeRed);
+}
+
+.readMoreButton{
+    border: none;
+    background-color: var(--themeRed);
+}
+
+.readMoreButton a{
+    color: white;
+}
+
+.cornerButtons{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.posts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+.post{
+    position: relative;
+    background-color: #FFFFFF;
+    text-align: left;
+    margin: 0.5em;
+    width: 90%;
+
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+}
+
+.setup{
+    padding: 0.2em 0.5em;
+}
+
+.articlePost{
+    padding: 1em;
+}
+
+.joke{
+    border: 1.5px solid var(--themeGreen);
+}
+
+.shortStory{
+    border: 1.5px solid var(--themeBlue);
+}
+
+.shortHorrorStory{
+    border: 1.5px solid var(--themeRed);
+}
+
+input{
+    border: none;
+    padding: 1em;
+    margin: 0.5em;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+select {
+    padding: 1em;
+    margin: 1em;
+}
+
+.searchBox{
+    margin: 1em auto;
+    width: 200px;
+    border:1px solid var(--themeRed);
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    .posts{
+      display: block;
+    }
+    .post{
+        width: 80%;
+    }
+  }
